@@ -1,0 +1,20 @@
+{
+  "signout": "Sign-Out",
+  "about": "About",
+  "lang": "Language",
+  "profile": "Profile",
+  "footer" : "Designed and developed by Courses4Arab.com",
+  "filter1" : "Newest first",
+  "filterN" : "Oldest first",
+  "task": "All-Tasks",
+  "completed": "completed",
+  "notCompleted" :"not-Completed",
+  "add" : "Add new task",
+  "pup" : "Task added successfully",
+  "add1": "Add",
+  "created": "Created",
+  "complt" : "Completed",
+  "cancel" : "Cancel",
+  "addmore" : "Add more",
+  "delete" : "Delete"
+}

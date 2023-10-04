@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+
+  font-family: sans-serif, 'Cairo';
+
+
+  text-decoration: none;
+  list-style: none;
+
+
+}
+
+html {
+  box-sizing: border-box;
+  background-color: #f2f2f2;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+.mt{
+  margin-top: 1em;
+}
+.mtt{
+  margin-top: 2em;
+}
+.mttt{
+  margin-top: 3em;
+}
+.center{
+  text-align: center;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.email{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* heart animation */
+.anim{
+  animation: heart 2s infinite linear;
+}
+
+@keyframes heart{
+  0%, 100%{
+opacity: 0;
+  }
+
+  50%{
+opacity: 1;
+  }
+}
+
+
+/* theme mode */
+.light .link{
+  color: #666;
+}
+.dark a{
+  color: aliceblue;
+}
+
+/* scrollbar */
+
+::-webkit-scrollbar {
+  width: 1.1rem;
+ }
+ 
+::-webkit-scrollbar-track {
+  border: 7px solid #232943;
+  box-shadow: inset 0 0 2.5px 2px rgba(0, 0, 0, 0.5);
+  border-radius: 1rem;
+  }
+ 
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(90deg, #666, #3d4a59);
+  border-radius: 1rem;
+}
+ 
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(270deg, #666, #3d4a59, #666);
+}

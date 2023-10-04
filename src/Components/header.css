@@ -1,0 +1,149 @@
+header {
+  background-color: teal;
+}
+.dark header {
+  background-color: #111;
+}
+
+h1 {
+  font-size: 25px;
+  color: white;
+}
+@keyframes down {
+  0% {
+    transform: translateY(-100px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes ltr {
+  0% {
+    transform: translateX(-100px);
+    color: cyan;
+  }
+
+  50% {
+    transform: translateX(150px);
+  }
+
+  70% {
+    transform: translateX(-150px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+header {
+  animation: down 1s 1;
+}
+
+.bigTitle {
+  animation: ltr 2s 1;
+}
+
+/* ===============
+   1.  ul class .flex
+================ */
+
+.hide-when-mobile {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.flex {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+
+.main-list {
+  padding: 10px;
+  font-size: 19px;
+  position: relative;
+}
+
+.main-link {
+  padding: 8px 15px;
+  color: white;
+}
+.active {
+  color: cyan;
+  box-shadow: 0 0 5px cyan;
+  border-radius: 5px;
+}
+.btn3 {
+  all: unset;
+  padding: 8px 15px;
+  color: white;
+  cursor: pointer;
+}
+
+.main-link:hover {
+  color: cyan;
+  box-shadow: 0 0 5px cyan;
+  border-radius: 5px;
+}
+/* btn dark-mode*/
+
+.theme-btn {
+  outline: 0;
+  cursor: pointer;
+  font-size: 1.2rem;
+  background-color: transparent;
+  border: none;
+  color: wheat;
+  transition: all 0.2s;
+}
+.theme-btn:hover {
+  font-size: 1.4rem;
+}
+
+.light .sun {
+  display: none;
+}
+.dark .moon {
+  display: none;
+}
+/* language btn */
+.main-list .sub-lang{
+  position: absolute;
+  border-top: 2px solid teal;
+  background-color: #333;
+  color: aliceblue;
+  font-size: 12px;
+  border-radius: 7px;
+  width: 100px;
+  display: none;
+  transition: all 0.5s;
+}
+.light .main-list .sub-lang{
+  background-color: rgb(218, 223, 228);
+  color: #333;
+}
+.main-list:hover .sub-lang{
+  display: block;
+}
+.main-list .sub-lang li{
+  padding: 8px 12px;
+  border-bottom: 1px solid grey;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.5s;
+}
+.main-list .sub-lang li:hover{
+  background-color: #555;
+  cursor: pointer;
+  border-radius: 7px;
+  font-size: 13px;
+}
+.light .main-list .sub-lang li:hover{
+  background-color: rgba(128, 128, 128, 0.644);
+}

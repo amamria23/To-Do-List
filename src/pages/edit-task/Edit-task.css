@@ -1,0 +1,151 @@
+/*========================
+  Table of content:
+
+  1-title
+  2-sub-task section
+  3-add more && delete btn
+========================*/
+
+.edit-task {
+  min-height: calc(100vh - 112px);
+}
+.light .edit-task .time, .light .edit-task .title-input{
+  color: black;          
+  
+}
+
+.dark .edit-task,
+.dark .edit-task .title-input, .light .card-task p {
+  color: white;
+}
+
+/*======= 
+1-title: 
+========*/
+.edit-task .title-input {
+  background-color: transparent;
+  border: none;
+  font-size: 25px;
+  font-weight: bold;
+  margin-top: 15px;
+}
+.edit-task .title-input:focus{
+  outline: none;
+}
+.edit-task .fa-pen-to-square {
+  font-size: 18px;
+  color: blue;
+  transition: all 0.3s;
+  margin-left: 15px;
+}
+.edit-task .fa-pen-to-square:hover {
+  font-size: 21px;
+  cursor: pointer;
+}
+
+/*================= 
+2-sub-task section: 
+==================*/
+.edit-task .sub-task {
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.edit-task .parent-time {
+  justify-content: space-between;
+}
+
+.edit-task .completed input {
+  margin-right: 7px;
+  width: 18px;
+  height: 18px;
+  accent-color: teal;
+}
+.edit-task label {
+  font-size: 17px;
+  font-weight: 600;
+  position: relative;
+  bottom: 3px;
+}
+.edit-task .time {
+  font-size: 12px;
+  font-weight: 500;
+  color: rgb(164, 213, 255);
+}
+.edit-task .card-task {
+  justify-content: space-between;
+  box-shadow: 0 5px 30px 0 rgba(0, 0, 0, 0.25);
+  background-color: rgb(65, 71, 84);
+  padding: 16px;
+  border-radius: 7px;
+  margin-bottom: 15px;
+  width: 100%;
+  transition: all 0.3s;
+}
+.edit-task .card-task:hover {
+  background-color: rgb(36, 38, 43);
+  border-left: 5px wheat solid;
+  cursor: pointer;
+}
+.edit-task .fa-trash-can {
+  margin-right: 19px;
+  color: rgb(237, 181, 181);
+}
+.add-new-task{
+  box-shadow: 0 5px 30px 0 rgba(0, 0, 0, 0.25);
+  background-color: rgb(65, 71, 84);
+  border-radius: 7px;
+  padding: 3px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  animation: ANT 1s 1;
+}
+.add-new-task input{
+  margin-left: 5px;
+  padding: 5px;
+  position: relative;
+  top: 7px;
+}
+@keyframes ANT {
+  0%{scale: 0;}
+  50%{scale: 1.2;}
+  100%{scale: 1;}
+}
+.add-new-task button{
+  all: unset;
+  background-color: teal;
+  padding: 5px 12px;
+  border-radius: 6px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+/*======================= 
+3-add more && delete btn: 
+=======================*/
+.edit-task .add-more {
+  all: unset;
+  background-color: teal;
+  font-size: 16px;
+  padding: 8px 12px;
+  border-radius: 5px;
+  margin-bottom: 44px;
+  cursor: pointer;
+}
+.edit-task .add-more:hover, .edit-task .delete:hover, .add-new-task button:hover {
+  font-size: 18px;
+}
+.edit-task .add-more:active, .edit-task .delete:active, .add-new-task button:active{
+  font-size: 14px;
+}
+.edit-task .delete {
+  all: unset;
+  background-color: red;
+  padding: 9px 7px;
+  margin-bottom: 20px;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 5px;
+  cursor: pointer;
+}

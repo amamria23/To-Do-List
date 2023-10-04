@@ -1,0 +1,20 @@
+{
+  "signout": "Se déconnecter",
+  "about": "Support",
+  "lang": "Langue",
+  "profile": "Compte Pro",
+  "footer" : "Style et developement à partir de c4a",
+  "filter1" : "Nouveau premier",
+  "filterN" : "dernier premier",
+  "task": "Tous les tâches",
+  "completed": "Terminées",
+  "notCompleted" :"Non Terminées",
+  "add" : "Ajouter un nouveau tâche",
+  "pup": "Tâche ajoutée avec succès",
+  "add1": "Ajouter",
+  "created": "Creé par",
+  "complt" : "Termineé",
+  "cancel" : "Annuler",
+  "addmore" : "Ajouter plus",
+  "delete" : "Supprimer"
+}

@@ -1,0 +1,10 @@
+.myfooter footer{
+  background-color: teal;
+  color: white;
+  padding: 15px ;
+  text-align: center;
+  font-size: 18px;
+}
+.dark .myfooter footer {
+  background-color: #111;
+}

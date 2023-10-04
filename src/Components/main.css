@@ -1,0 +1,110 @@
+main {
+  color: #1b1b1b;
+
+  min-height: calc(100vh - 112px);
+
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 50px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: fit-content;
+  margin: auto;
+
+  text-align: center;
+}
+.dark {
+  background-color: grey;
+}
+
+.dark main {
+  color: white;
+}
+
+@media (max-width: 500px) {
+  main {
+    font-size: 17px;
+  }
+}
+
+/* ==================
+    SignUp && SignIn
+===================== */
+main form {
+  display: flex;
+  flex-direction: column;
+}
+main p {
+  margin: 0 auto;
+}
+form {
+  width: 400px;
+}
+form input {
+  border: 1px solid grey;
+  padding: 9px 8px;
+  border-radius: 6px;
+  margin-bottom: 15px;
+  font-size: 17px;
+  font-weight: 600;
+}
+.btn {
+  all: unset;
+  background-color: teal;
+  border-radius: 6px;
+  font-size: 17px;
+  padding: 1px 12px;
+  height: 44px;
+  color: white;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+.btn2 {
+  background-color: red;
+  font-size: 15px;
+  margin-top: 18px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.btn:active {
+  scale: 0.9;
+}
+form p {
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 15px;
+}
+p a {
+  text-decoration: underline;
+  color: blue;
+}
+h5 {
+  margin-bottom: 12px;
+}
+
+.forgot {
+  cursor: pointer;
+}
+
+
+/* page loading */
+.pageLoading {
+  height: 200px;
+  width: 200px;
+  border-top: 5px red solid;
+  border-right: 5px red solid;
+  border-radius: 50%;
+  animation: loading 1s infinite;
+}
+@keyframes loading {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
